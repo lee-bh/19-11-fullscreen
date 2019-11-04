@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body,h1,p,ul,li{margin:0; padding:0;}
+		nav{position: fixed; z-index: 100;left:calc(50% - 160px);}
+		nav li{float: left; list-style: none; width:80px; height:30px; background:black;text-align: center; line-height: 30px;}
+		nav li a{color: white;display: block; text-decoration: none;}
+		nav li:hover{background-color: white;}
+		nav li:hover a{color:black;}
+		section{position: relative; padding-top: 100%;}
+		
+		.red{background-color: red}
+		.blue{background-color: blue}
+		.green{background-color: green}
+		.gray{background-color: #DDD;}
+
+		#s1{padding-top: 100%; background:url(mountain.jpg);
+		background-size: cover;background-attachment: fixed}
+		#s2{padding-top: 65%; background:url(flower.jpg);
+		background-size: cover;background-attachment: fixed}
+		#s3{padding-top: 80%; background:url(mountain2.jpg);
+		background-size: cover;background-attachment: fixed}
+
+		.mtr{position: absolute;}
+		.mt1{width:10%; height:10%; left:10%; top:10%;}
+		.mt2{width:20%; height:20%; left:50%; top:20%;}
+		.mt3{width:5%; height:30%; left:30%; top:10%;}
+		.mt4{width:30%; height:5%; left:50%; top:20%;}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#s1">s1</a></li>
+			<li><a href="#s2">s2</a></li>
+			<li><a href="#s3">s3</a></li>
+			<li><a href="#s4">s4</a></li>
+		</ul>
+	</nav>
+	<section class="red" id="s1">
+		<div class="mtr mt1 red"></div>
+		<div class="mtr mt3 blue"></div>
+	</section>
+	<section class="blue" id="s2">
+		<div class="mtr mt2 red"></div>
+		<div class="mtr mt4 blue"></div>
+	</section>
+	<section class="gray" id="s3">
+		<div class="mtr mt3 red"></div>
+		<div class="mtr mt4 blue"></div>
+	</section>
+	<section class="green" id="s4"></section>
+</body>
+</html>
